@@ -2,6 +2,7 @@ import { programs } from "@/lib/constans";
 import * as motion from "motion/react-client";
 import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function Programs() {
   return (
@@ -38,11 +39,23 @@ export default function Programs() {
 
         {/* Cards */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {programs.map((program, index) => (
-            <motion.div className="group cursor-pointer" key={program.title}>
-              <Card className="p-0 transition-shadow duration-300 hover:shadow-2xl">
-                <div className="relative overflow-hidden rounded-t-lg  h-60 md:h-56 lg:h-40">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: index * 0.1,
+              }}
+              whileHover={{ scale: 1.05 }}
+              className="group cursor-pointer h-full"
+              key={program.title}
+            >
+              <Card className="p-0 transition-shadow duration-300 hover:shadow-2xl flex flex-col h-full">
+                <div className="relative overflow-hidden rounded-t-lg w-full h-60 md:h-56 lg:h-40">
                   <Image
                     src={program.image}
                     alt={program.title}
@@ -50,34 +63,21 @@ export default function Programs() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-
-                <CardContent>
-                  <motion.h3
-                    initial={{ opacity: 0, y: 8 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{
-                      duration: 0.5,
-                      ease: "easeOut",
-                      delay: index * 0.2,
-                    }}
-                    className="text-xl font-bold font-heading mb-3 text-foreground group-hover:text-primary transition-colors duration-300"
-                  >
+                <CardContent className="p-6 pt-0 flex flex-col flex-1">
+                  <motion.h3 className="text-xl font-bold font-heading mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
                     {program.title}
                   </motion.h3>
-                  <motion.p
-                    initial={{ opacity: 0, y: 6 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{
-                      duration: 0.5,
-                      ease: "easeOut",
-                      delay: index * 0.3,
-                    }}
-                    className="text-muted-foreground mb-4 leading-relaxed"
-                  >
+                  <motion.p className="text-muted-foreground mb-4 leading-relaxed flex-1">
                     {program.description}
                   </motion.p>
+                  <div>
+                    <Button
+                      variant="outline"
+                      className="w-full transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground"
+                    >
+                      Learn More
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
