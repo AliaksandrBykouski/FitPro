@@ -78,3 +78,56 @@ export const testimonials = [
     rating: 5,
   },
 ];
+
+export const plans = [
+  {
+    name: "Basic",
+    description:
+      "Perfect for beginners and those looking for a simple solution.",
+    price: 29.99,
+    period: "per month",
+    features: [
+      "Gym Access",
+      "Basic Equipment Usage",
+      "Locker Room Access",
+      "Mobile App Access",
+      "Progress Tracking",
+    ],
+    cta: "Join Now",
+    popular: false,
+  },
+  {
+    name: "Pro",
+    description:
+      "Most popular choice for those who want to take their fitness to the next level.",
+    price: 59.99,
+    period: "per month",
+    features: [
+      "Everything in Basic",
+      "4 Personal Training Sessions",
+      "Group Fitness Classes",
+      "Nutrition Consultation",
+      "Priority Support",
+      "Custom Workout Plans",
+    ],
+    cta: "Join Now",
+    popular: true,
+  },
+  {
+    name: "Elite",
+    description: "For those who want the best of the best.",
+    price: 99.99,
+    period: "per month",
+    features: [
+      "Everything in Pro",
+      "Unlimited Personal Training",
+      "Personal Nutrition Coach",
+      "Online Classes Access",
+      "24/7 Gym Access",
+      "Recovery and Wellness Programs",
+      "VIP Member Benefits",
+    ],
+    cta: "Join Now",
+    popular: false,
+  },
+];
