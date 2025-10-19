@@ -49,3 +49,32 @@ export const programs = [
     image: "/nutrition.jpg",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Sarah H.",
+    story: "I lost 20lbs in just 6 months with FitPro Bykouski.",
+    details:
+      "I was skeptical at first, but after trying FitPro Bykouski, I can't get enough!",
+    image: "/sarah.jpg",
+    rating: 5,
+  },
+  {
+    name: "John D.",
+    story:
+      "I started working out with FitPro Bykouski and I've never looked back.",
+    details:
+      "The community is amazing, and the trainers are knowledgeable and supportive.",
+    image: "/john.jpg",
+    rating: 5,
+  },
+  {
+    name: "Emily S.",
+    story:
+      "I've been working out with FitPro Bykouski for years and I'm still going strong.",
+    details:
+      "The programs are challenging, but the results speak for themselves.",
+    image: "/emily.jpg",
+    rating: 5,
+  },
+];
