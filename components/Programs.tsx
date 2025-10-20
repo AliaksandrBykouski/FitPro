@@ -1,8 +1,8 @@
-import { programs } from "@/lib/constans";
 import * as motion from "motion/react-client";
-import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
+import { programs } from "@/lib/constans";
 import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
 
 export default function Programs() {
   return (

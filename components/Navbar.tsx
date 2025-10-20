@@ -1,9 +1,8 @@
-import { navItems } from "@/lib/constans";
 import Link from "next/link";
-import React from "react";
-import { Button } from "./ui/button";
-import { ModeToggle } from "./ThemeToggle";
+import { navItems } from "@/lib/constans";
 import MobileNavigation from "./MobileNavigation";
+import { ModeToggle } from "./ThemeToggle";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (

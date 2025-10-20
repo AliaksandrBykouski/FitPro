@@ -1,11 +1,11 @@
 "use client";
 
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
+import { navItems } from "@/lib/constans";
 import { ModeToggle } from "./ThemeToggle";
 import { Button } from "./ui/button";
-import { Menu, X } from "lucide-react";
-import { navItems } from "@/lib/constans";
-import Link from "next/link";
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,6 @@ const MobileNavigation = () => {
             className={`shadow-lg fixed top-16 left-0 right-0 bottom-0 z-30 md:hidden bg-transparent ${
               isOpen ? "pointer-events-auto" : "pointer-events-none"
             }`}
-            onClick={() => setIsOpen(false)}
           />
           <div className="fixed top-16 left-0 right-0 z-40 md:hidden bg-background border-t border-border dark:border-secondary/40 shadow-lg">
             <div className="p-2 pb-3 space-y-1 sm:px-3">

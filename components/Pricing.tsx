@@ -1,9 +1,10 @@
-import { plans } from "@/lib/constans";
-import * as motion from "motion/react-client";
-import { Card, CardContent, CardHeader } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
 import { Check } from "lucide-react";
+import * as motion from "motion/react-client";
+import { plans } from "@/lib/constans";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardHeader } from "./ui/card";
+
 const Pricing = () => {
   return (
     <section

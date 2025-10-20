@@ -1,8 +1,8 @@
-import { testimonials } from "@/lib/constans";
-import * as motion from "motion/react-client";
-import { Card, CardContent } from "./ui/card";
-import Image from "next/image";
 import { Star } from "lucide-react";
+import * as motion from "motion/react-client";
+import Image from "next/image";
+import { testimonials } from "@/lib/constans";
+import { Card, CardContent } from "./ui/card";
 
 const Testimonials = () => {
   const MAX_STARS = 5;
@@ -90,20 +90,22 @@ const Testimonials = () => {
                     }}
                     className="flex justify-center mb-4 gap-1"
                   >
-                    {Array.from({ length: MAX_STARS }).map((_, starIndex) => {
-                      const filled = starIndex < testimonial.rating;
-                      return (
-                        <Star
-                          key={starIndex}
-                          className={
-                            filled
-                              ? "w-5 h-5 text-yellow-300"
-                              : "w-5 h-5 text-neutral-300"
-                          }
-                          fill={filled ? "currentColor" : "none"}
-                        />
-                      );
-                    })}
+                    {Array.from({ length: MAX_STARS }).map(
+                      (_, starPosition) => {
+                        const filled = starPosition < testimonial.rating;
+                        return (
+                          <Star
+                            key={`star-${testimonial.name}-${starPosition}`}
+                            className={
+                              filled
+                                ? "w-5 h-5 text-yellow-300"
+                                : "w-5 h-5 text-neutral-300"
+                            }
+                            fill={filled ? "currentColor" : "none"}
+                          />
+                        );
+                      },
+                    )}
                   </motion.div>
 
                   <motion.blockquote
