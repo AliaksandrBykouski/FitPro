@@ -57,13 +57,13 @@ export default function Hero() {
           >
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/80 text-lg font-semibold cursor-pointer transition-all duration-300 hover:scale-105 px-8"
+              className="bg-primary hover:bg-primary/80 text-lg text-foreground font-semibold cursor-pointer transition-all duration-300 hover:scale-105 px-8"
             >
               Start Free Trial
             </Button>
             <Button
               size="lg"
-              className="bg-transparent hover:bg-transparent border border-primary text-lg font-semibold cursor-pointer transition-all duration-300 hover:scale-105 px-8"
+              className="bg-transparent hover:bg-transparent text-foreground border border-primary text-lg font-semibold cursor-pointer transition-all duration-300 hover:scale-105 px-8"
             >
               View Plans
             </Button>

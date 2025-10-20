@@ -7,9 +7,9 @@ import { Check } from "lucide-react";
 const Pricing = () => {
   return (
     <section
-      id="programs"
-      aria-labelledby="programs-title"
-      aria-describedby="programs-description"
+      id="pricing"
+      aria-labelledby="pricing-title"
+      aria-describedby="pricing-description"
       className="py-20 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +20,7 @@ const Pricing = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="text-4xl md:text-5xl font-black font-heading mb-4 text-foreground"
-            id="programs-title"
+            id="pricing-title"
           >
             Affordable <span className="text-primary">Plans</span> for Everyone
           </motion.h2>
@@ -30,7 +30,7 @@ const Pricing = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
-            id="programs-description"
+            id="pricing-description"
           >
             Choose the perfect plan that fits your budget and fitness goals. All
             plans include a personalized workout program, nutrition plan, and
@@ -96,8 +96,8 @@ const Pricing = () => {
                   <Button
                     className={`w-full py-3 text-lg font-semibold transition-all duration-300 ${
                       plan.popular
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "bg-secondary hover:bg-primary text-primary-foreground"
+                        ? "bg-primary  hover:bg-primary/90 text-primary-foreground"
+                        : "bg-secondary/60 hover:bg-primary dark:text-foreground"
                     }`}
                   >
                     {plan.cta}

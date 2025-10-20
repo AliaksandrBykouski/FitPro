@@ -2,6 +2,8 @@ import { navItems } from "@/lib/constans";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
+import { ModeToggle } from "./ThemeToggle";
+import MobileNavigation from "./MobileNavigation";
 
 const Navbar = () => {
   return (
@@ -32,7 +34,13 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <ModeToggle />
             <Button className="font-semibold">Get Started</Button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <MobileNavigation />
           </div>
         </div>
       </div>

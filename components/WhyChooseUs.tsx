@@ -31,9 +31,9 @@ const WhyChooseUs = () => {
 
   return (
     <section
-      id="programs"
-      aria-labelledby="programs-title"
-      aria-describedby="programs-description"
+      id="about"
+      aria-labelledby="about-title"
+      aria-describedby="about-description"
       className="py-20 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="text-4xl md:text-5xl font-black font-heading mb-4 text-foreground"
-            id="programs-title"
+            id="about-title"
           >
             Why Choose <span className="text-primary">Bykouski FitPro</span>{" "}
             Fitness
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
-            id="programs-description"
+            id="about-description"
           >
             We offer a wide range of fitness programs to help you achieve your
             fitness goals. Our programs are designed to be engaging,

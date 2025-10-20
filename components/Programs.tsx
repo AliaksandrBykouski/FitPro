@@ -10,7 +10,7 @@ export default function Programs() {
       id="programs"
       aria-labelledby="programs-title"
       aria-describedby="programs-description"
-      className="py-20 bg-background"
+      className="py-20 bg-foreground/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -73,7 +73,7 @@ export default function Programs() {
                   <div>
                     <Button
                       variant="outline"
-                      className="w-full transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground"
+                      className="w-full transition-colors duration-300 group-hover:bg-primary dark:group-hover:bg-primary group-hover:text-primary-foreground"
                     >
                       Learn More
                     </Button>

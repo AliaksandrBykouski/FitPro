@@ -9,10 +9,10 @@ const Testimonials = () => {
 
   return (
     <section
-      id="programs"
-      aria-labelledby="programs-title"
-      aria-describedby="programs-description"
-      className="py-20 bg-background"
+      id="testimonials"
+      aria-labelledby="testimonials-title"
+      aria-describedby="testimonials-description"
+      className="py-20 bg-foreground/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -22,7 +22,7 @@ const Testimonials = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="text-4xl md:text-5xl font-black font-heading mb-4 text-foreground"
-            id="programs-title"
+            id="testimonials-title"
           >
             Success Stories
           </motion.h2>
@@ -32,7 +32,7 @@ const Testimonials = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
-            id="programs-description"
+            id="testimonials-description"
           >
             Real transformations from our real clients and their success stories
             who chose to change their lives with us and our programs.
